@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(145deg, #ff9a9e, #fad0c4, #fad0c4);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #2c2c2c;
+  font-family: "Inter", sans-serif;
+}
+
+#div1 {
+  width: 90%;
+  max-width: 1100px;
+  margin: 2rem auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(255, 155, 155, 0.4);
+}
+
+#h1 {
+  background-color: #ffe2e6;
+  border: 2px solid #ff6b81;
+  border-radius: 12px;
+  padding: 1rem;
+  color: #4c1f24;
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.character-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin: 1rem;
+  object-fit: cover;
+}
+
+.intro {
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.8s ease-in-out both;
+  transition: box-shadow 0.3s ease;
+}
+
+.intro:hover {
+  box-shadow: 0 8px 20px rgba(255, 105, 135, 0.3), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#span1 {
+  background-color: #ffe4e1;
+}
+#span2 {
+  background-color: #e0f7fa;
+}
+#span3 {
+  background-color: #fff8dc;
+}
+#span4 {
+  background-color: #f0fff0;
+}
+#span5 {
+  background-color: #f5f5dc;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.paragraphs {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  flex: 1;
+  color: #333;
+}
+
+.odd {
+  font-weight: 600;
+}
+.even {
+  font-style: italic;
+}
+
+#p2 {
+  color: #007c6c;
+}
+#p3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  color: #5c2d2d;
+  font-style: italic;
+}
+#p4 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: #2f2f2f;
+}
+#p5 {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  color: #3d49a0;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .character-img {
+    margin: 0 auto;
+  }
+
+  .paragraphs {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  #h1 {
+    font-size: 1.8rem;
+  }
+}
